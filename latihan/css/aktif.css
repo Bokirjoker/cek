@@ -1,0 +1,101 @@
+html,
+body,
+.intro {
+  height: 100%;
+  
+}
+thead{
+  border:1;
+  color: #fff;
+}
+
+table td,
+table th {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+table thead{
+  text-align: center;
+}
+.mask-custom {
+  background: rgba(0, 0, 0, 0);
+  border-radius: 2em;
+  backdrop-filter: blur(25px);
+  border: 2px solid rgba(255, 255, 255, 0.05);
+  background-clip: padding-box;
+  box-shadow: 10px 10px 10px rgba(46, 54, 68, 0.03);
+}
+
+.progress{
+  position: relative;
+  height: 32px;
+  width: 200px;
+  display: block;
+  color: aqua;
+  background: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.progress::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  background: aqua;
+  animation: progres 10s linear forwards;
+} 
+@keyframes progres {
+  0%{
+    width: 0;
+  }
+  100%{
+    width: 100%;
+  }
+}
+.progress::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+  line-height: 20px;
+  color: rgb(0, 255, 255);
+  mix-blend-mode: difference;
+  animation: percen 10s linear forwards;
+}
+@keyframes percen{
+    05% {content: '05%';}
+    10% {content: '10%';}
+    15% {content: '15%';}
+    20% {content: '20%';}
+    25% {content: '25%';}
+    30% {content: '30%';}
+    35% {content: '35%';}
+    40% {content: '40%';}
+    45% {content: '45%';}
+    50% {content: '50%';}
+    55% {content: '55%';}
+    60% {content: '60%';}
+    65% {content: '65%';}
+    70% {content: '70%';}
+    75% {content: '75%';}
+    80% {content: '80%';}
+    85% {content: '85%';}
+    90% {content: '90%';}
+    91% {content: '91%';}
+    92% {content: '92%';}
+    93% {content: '93%';}
+    94% {content: '94%';}
+    95% {content: '95%';}
+    96% {content: '96%';}
+    97% {content: '97%';}
+    98% {content: '98%';}
+    99% {content: '99%';}
+    100% {content: '100%';}
+}
